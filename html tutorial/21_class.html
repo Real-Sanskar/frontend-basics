@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .highlight{
+            background-color: yellow;
+            font-weight: bold;
+            }
+            .box{
+                border: 2px solid black;
+                padding: 10px;
+                margin : 5px;
+            }
+            .button{
+                padding :10px 20px;
+                border : none;
+                cursor : pointer;
+            }
+
+            .primary {background-color: blue; color:white}
+            .secondary {background-color: red; color: white}
+        </style>
+    </head>
+    <body>
+        <!-- BASIC CLASS USAGE -->
+        <h2>1. Basic class</h2>
+        <p class="highlight">This paragraph has highlight class</p>
+        <p class="highlight">Multiple elments can have same class</p>
+
+
+        <!-- MULTIPLE CLASSES -->
+        <h2>2. Multiple elements on same class</h2>
+        <p class="highlight box">This element has BOTH highlight and box classes</p>
+
+        
+        <!-- PRACTICAL EXAMPLE -->
+        <h2>3. Button examples</h2>
+        <button class="button primary">Primary button</button>
+        <button class="button secondary">Secondary button</button>
+
+
+        <!-- KEY POINTS TO REMEMBER -->
+    <!--
+    ✓ Classes use dot (.) in CSS: .classname
+    ✓ Classes can be reused on multiple elements
+    ✓ Multiple classes: class="class1 class2 class3"
+    ✓ JavaScript: document.getElementsByClassName("classname")
+    ✓ Class vs ID: Classes = many elements, ID = one element
+    -->
+    </body>
+</html>

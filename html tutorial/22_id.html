@@ -1,0 +1,119 @@
+<!--
+    ════════════════════════════════════
+    QUICK REFERENCE - HTML IDs
+    ════════════════════════════════════
+    
+    SYNTAX:
+    HTML: <div id="myid">Content</div>
+    CSS:  #myid { property: value; }
+    JS:   document.getElementById("myid")
+    
+    KEY POINTS:
+    • IDs are UNIQUE (one per page)
+    • Use # in CSS
+    • Use for unique elements
+    • Higher priority than classes
+    • Good for JavaScript targeting
+    • Good for anchor links
+    
+    CLASS VS ID:
+    Class: .name, reusable, many elements
+    ID: #name, unique, one element only
+    
+    WHEN TO USE:
+    ID: #header, #footer, #nav, unique sections
+    Class: .button, .card, .box, reusable items
+    
+    JAVASCRIPT:
+    getElementById("myid") - singular
+    getElementsByClassName("myclass") - plural
+    
+    COMMON MISTAKES:
+    ✗ Same ID twice on page
+    ✗ Forgetting # in CSS
+    ✗ Using spaces in ID names
+    
+    ════════════════════════════════════
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML IDs - Notes</title>
+    <style>
+        /* ID styling - use # (hash) */
+        #header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #main {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        #footer {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /* Class for comparison */
+        .box { 
+            border: 2px solid black; 
+            padding: 10px; 
+            margin: 5px; 
+        }
+        
+        /* ID for special box */
+        #special-box {
+            background-color: gold;
+            border: 3px solid red;
+        }
+        
+        /* ID has higher priority */
+        .text { color: blue; }
+        #special { color: red; }
+    </style>
+</head>
+<body>
+    <div id="header">Header (Unique ID)</div>
+    
+    <div id="main">
+        <h2>Examples</h2>
+        
+        <!-- ID vs CLASS -->
+        <div class="box">Box with class (reusable)</div>
+        <div class="box">Another box with same class</div>
+        <div class="box" id="special-box">Box with class AND unique ID (gold background)</div>
+        
+        <!-- JAVASCRIPT EXAMPLE -->
+        <p id="demo">Click button to change this text</p>
+        <button onclick="document.getElementById('demo').innerHTML='Changed!'">
+            Change Text
+        </button>
+        
+        <!-- ANCHOR LINKS -->
+        <h3>Jump to sections:</h3>
+        <a href="#section1">Section 1</a> | 
+        <a href="#section2">Section 2</a>
+        
+        <div style="height: 300px;"></div>
+        <h3 id="section1">Section 1</h3>
+        <p>Content for section 1</p>
+        
+        <div style="height: 300px;"></div>
+        <h3 id="section2">Section 2</h3>
+        <p>Content for section 2</p>
+        
+        <!-- SPECIFICITY -->
+        <p class="text">Blue text (class only)</p>
+        <p class="text" id="special">Red text (ID overrides class)</p>
+    </div>
+    
+    <div id="footer">Footer (Unique ID)</div>
+</body>
+</html>

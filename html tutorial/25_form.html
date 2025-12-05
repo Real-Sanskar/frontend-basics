@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Basics - Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        
+        input[type="reset"] {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Forms - Basic Examples</h1>
+    
+    <!-- EXAMPLE 1: Simple Form -->
+    <h2>1. Simple Form</h2>
+    <form>
+        Username: <input type="text" name="username"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+    
+    <!-- EXAMPLE 2: Form with Labels -->
+    <h2>2. Form with Labels</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- EXAMPLE 3: Radio Buttons -->
+    <h2>3. Radio Buttons (Choose One)</h2>
+    <form>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- EXAMPLE 4: Checkboxes -->
+    <h2>4. Checkboxes (Choose Multiple)</h2>
+    <form>
+        <p>Select hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby1" value="reading">
+        <label for="reading">Reading</label><br>
+        
+        <input type="checkbox" id="gaming" name="hobby2" value="gaming">
+        <label for="gaming">Gaming</label><br>
+        
+        <input type="checkbox" id="sports" name="hobby3" value="sports">
+        <label for="sports">Sports</label><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- EXAMPLE 5: Dropdown -->
+    <h2>5. Dropdown (Select)</h2>
+    <form>
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- EXAMPLE 6: Textarea -->
+    <h2>6. Textarea (Multi-line Text)</h2>
+    <form>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- EXAMPLE 7: Complete Form -->
+    <h2 style="text-align:center;">7. Complete Registration Form</h2>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+        
+        <label for="useremail">Email:</label>
+        <input type="text" id="useremail" name="email">
+        
+        <label for="userpass">Password:</label>
+        <input type="password" id="userpass" name="password">
+        
+        <p>Gender:</p>
+        <input type="radio" id="m" name="gender" value="male">
+        <label for="m">Male</label>
+        <input type="radio" id="f" name="gender" value="female">
+        <label for="f">Female</label><br><br>
+        
+        <p>Interests:</p>
+        <input type="checkbox" id="code" name="int1" value="coding">
+        <label for="code">Coding</label><br>
+        <input type="checkbox" id="music" name="int2" value="music">
+        <label for="music">Music</label><br><br>
+        
+        <label for="usercountry">Country:</label>
+        <select id="usercountry" name="country">
+            <option value="">Select</option>
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+        </select>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+        
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+    
+    <!--
+    ════════════════════════════════════════════════
+    QUICK REFERENCE - HTML FORMS BASICS
+    ════════════════════════════════════════════════
+    
+    BASIC FORM:
+    <form>
+        <input type="text" name="username">
+        <input type="submit" value="Submit">
+    </form>
+    
+    INPUT TYPES:
+    
+    Text:
+    <input type="text" name="username">
+    
+    Password:
+    <input type="password" name="password">
+    
+    Submit Button:
+    <input type="submit" value="Submit">
+    
+    Reset Button:
+    <input type="reset" value="Clear">
+    
+    RADIO BUTTONS (Choose One):
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    Note: Same 'name' for same group
+    
+    CHECKBOXES (Choose Multiple):
+    <input type="checkbox" name="hobby1" value="reading"> Reading
+    <input type="checkbox" name="hobby2" value="music"> Music
+    Note: Different 'name' for each
+    
+    DROPDOWN (Select):
+    <select name="country">
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+    
+    TEXTAREA (Multi-line):
+    <textarea name="message" rows="5" cols="30"></textarea>
+    
+    LABEL:
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    Note: 'for' must match 'id'
+    
+    KEY POINTS:
+    • Forms collect user input
+    • Use 'name' attribute for data submission
+    • Use <label> for accessibility
+    • Radio: same name, choose one
+    • Checkbox: different names, choose multiple
+    • Submit button sends form
+    • Reset button clears form
+    
+    RADIO vs CHECKBOX:
+    Radio    → Circle, same name, one choice
+    Checkbox → Square, different names, multiple choices
+    
+    COMMON MISTAKES:
+    ✗ Forgetting 'name' attribute
+    ✗ Different names for radio buttons in same group
+    ✗ Label 'for' not matching input 'id'
+    
+    ════════════════════════════════════════════════
+    -->
+    
+</body>
+</html>

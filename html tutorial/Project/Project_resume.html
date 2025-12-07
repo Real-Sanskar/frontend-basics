@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,project,resume">
+        <meta name="description" content="Resume using HTML basics">
+        
+        <title>Resume using HTML</title>
+
+        <style>
+            h1{
+                text-align:center;
+            }
+
+
+            .header{
+                display:flex;
+                justify-content:space-between;
+                align-items:flex-start;
+            }
+
+            .contact{
+                max-width:70%;
+            }
+            .photo img{
+                width:100px;
+                height:auto;
+                border-radius:5px;
+            }
+
+            table, th, td{
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+            th,td{
+                text-align:center;
+                padding:5px;
+                border-spacing:15px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Resume</h1>
+            
+            <div class="header">
+                <div class="contact">
+                    <address>
+                        SANSKAR GAIKWAD<br>
+                        Behind PNB Bank<br>
+                        Raipur, CG 492001<br>
+                        Phone: 1234567890<br>
+                        E-mail: sanskar@sample.com<br>
+                        Links: 
+                        <a href="https://github.com/Real-Sanskar" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/sanskar-gaikwad-2428b9344" target="_blank">Linkedin</a>
+                    </address>
+                </div>
+                
+                <div class="photo">
+                    <img src="profile photo.png" alt="profile picture">
+                </div>
+            </div>
+        </header>
+        <hr>
+
+        <section>
+            <h2>Profile:</h2>
+            <p>Myself Sanskar Gaikwad, I am currently pursuing my B.Tech degree in IT branch.
+                My goal is to become to be an industry-ready software developer by continuous upskilling myself.<br>
+                I am currently learning DSA in C++ and front-end.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Education:</h2>
+            <table style="width:70%;">
+                <caption>Education Details</caption>
+                <tr>
+                    <th>Degree(s)</th>
+                    <th>Institution(s)</th>
+                    <th>Graduation Year</th>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>Holy Hearts Edu. Academy</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>Holy Hearts Edu. Academy</td>
+                    <td>2022</td>
+                </tr>
+            </table>
+        </section>
+            
+        <hr>
+        
+        <section>
+            <h2>Skills:</h2>
+            <ul type="disc">
+                <li>Technical Skills: HTML, CSS, C++</li>
+                <li>Soft Skills: Good in communication and teamwork</li>
+                <li>Good typing skills</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Projects:</h2>
+            <ul>
+                <li>Resume project in pure HTML</li>
+                <li>DSA practice in C++</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Achievements:</h2>
+            <ul>
+                <li>Top performer in coding competition at college.</li>
+            </ul>
+        </section>
+            
+        <section>
+            <h2>Certification</h2>
+            <ul>
+                <li>HTML course from W3schools</li>
+                <li>Advanced typing certificate from Typing.com</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2025 Sanskar Gaikwad</p>
+            <p>
+                <a href="mailto:sanskar18016@gmail.com">Mail</a>|
+                <a href="https://github.com/Real-Sanskar">GitHub</a>
+            </p>
+        </footer>
+    </body>
+</html>

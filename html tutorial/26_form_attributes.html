@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attributes - Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        h2 {
+            color: #007bff;
+        }
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 10px;
+            border-left: 3px solid #ffc107;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form Attributes - Examples</h1>
+    
+    <!-- EXAMPLE 1: action and method (GET) -->
+    <h2>1. GET Method (Search Form)</h2>
+    <div class="note">Data will appear in URL. Good for searches.</div>
+    <form action="search.php" method="GET">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="query" placeholder="Enter search term">
+        <input type="submit" value="Search">
+    </form>
+    
+    <!-- EXAMPLE 2: POST Method -->
+    <h2>2. POST Method (Login Form)</h2>
+    <div class="note">Data is hidden. Good for passwords.</div>
+    <form action="login.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <input type="submit" value="Login">
+    </form>
+    
+    <!-- EXAMPLE 3: target="_blank" -->
+    <h2>3. Open Result in New Tab</h2>
+    <div class="note">Using target="_blank" opens result in new tab.</div>
+    <form action="#" method="POST" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit in New Tab">
+    </form>
+    
+    <!-- EXAMPLE 4: autocomplete="off" -->
+    <h2>4. Autocomplete OFF</h2>
+    <div class="note">Browser won't suggest previous entries.</div>
+    <form action="#" method="POST" autocomplete="off">
+        <label for="cardnumber">Card Number:</label>
+        <input type="text" id="cardnumber" name="cardnumber">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- EXAMPLE 5: File Upload -->
+    <h2>5. File Upload (enctype required!)</h2>
+    <div class="note">Must use enctype="multipart/form-data" for file uploads.</div>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo">
+        <input type="submit" value="Upload">
+    </form>
+    
+    <!-- EXAMPLE 6: novalidate -->
+    <h2>6. No Validation</h2>
+    <div class="note">Form submits without browser validation.</div>
+    <form action="#" method="POST" novalidate>
+        <label for="email">Email (no validation):</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!-- EXAMPLE 7: Named Form -->
+    <h2>7. Named Form (for JavaScript)</h2>
+    <form name="myForm" action="#" method="POST">
+        <label for="data">Data:</label>
+        <input type="text" id="data" name="data">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <!--
+    ════════════════════════════════════════════════
+    QUICK REFERENCE - FORM ATTRIBUTES
+    ════════════════════════════════════════════════
+    
+    FORM ATTRIBUTES:
+    
+    1. action
+    Where to send form data
+    <form action="submit.php">
+    <form action="https://example.com/submit">
+    
+    2. method
+    How to send data (GET or POST)
+    <form method="GET">   → Data in URL
+    <form method="POST">  → Data hidden
+    
+    3. target
+    Where to display response
+    <form target="_self">   → Same tab (default)
+    <form target="_blank">  → New tab
+    <form target="_parent"> → Parent frame
+    <form target="_top">    → Full window
+    
+    4. autocomplete
+    Browser autocomplete on/off
+    <form autocomplete="on">   → Enable (default)
+    <form autocomplete="off">  → Disable
+    
+    5. novalidate
+    Disable browser validation
+    <form novalidate>
+    
+    6. enctype
+    Data encoding type
+    <form enctype="application/x-www-form-urlencoded"> → Default
+    <form enctype="multipart/form-data">  → For files (REQUIRED)
+    <form enctype="text/plain">           → Plain text
+    
+    7. name
+    Form name (for JavaScript)
+    <form name="loginForm">
+    
+    EXAMPLES:
+    
+    Search Form (GET):
+    <form action="search.php" method="GET">
+        <input type="text" name="query">
+        <input type="submit">
+    </form>
+    Result: search.php?query=hello
+    
+    Login Form (POST):
+    <form action="login.php" method="POST">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <input type="submit">
+    </form>
+    
+    File Upload:
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="photo">
+        <input type="submit">
+    </form>
+    
+    New Tab:
+    <form action="result.php" method="POST" target="_blank">
+        <input type="text" name="data">
+        <input type="submit">
+    </form>
+    
+    No Autocomplete:
+    <form action="submit.php" method="POST" autocomplete="off">
+        <input type="text" name="sensitive">
+        <input type="submit">
+    </form>
+    
+    GET vs POST:
+    
+    GET:
+    • Data visible in URL
+    • Limited size (~2000 chars)
+    • Can be bookmarked
+    • Not secure
+    • Use for: searches, filters
+    
+    POST:
+    • Data NOT in URL
+    • No size limit
+    • Cannot be bookmarked
+    • More secure
+    • Use for: login, sensitive data
+    
+    WHEN TO USE:
+    
+    action      → Always specify where data goes
+    method      → GET for search, POST for sensitive
+    enctype     → MUST use for file uploads
+    target      → Use _blank to open in new tab
+    autocomplete→ Turn off for sensitive fields
+    novalidate  → Only for custom validation
+    
+    COMMON MISTAKES:
+    ✗ File upload without enctype="multipart/form-data"
+    ✗ Using GET for passwords
+    ✗ Not specifying method (defaults to GET)
+    
+    BEST PRACTICES:
+    ✓ Use POST for passwords and sensitive data
+    ✓ Use GET for search forms
+    ✓ Always use enctype for file uploads
+    ✓ Disable autocomplete for sensitive fields
+    ✓ Specify method explicitly
+    
+    ════════════════════════════════════════════════
+    -->
+    
+</body>
+</html>

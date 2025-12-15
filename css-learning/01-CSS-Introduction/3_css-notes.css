@@ -1,0 +1,52 @@
+/* THREE WAYS TO ADD CSS */
+/* 1. Inline: <p style="color: red;">Text</p> */
+/* 2. Internal: <style> p { color: red; } </style> in <head> */
+/* 3. External: <link rel="stylesheet" href="styles.css"> ✓ BEST */
+
+/* CSS SYNTAX */
+selector {
+    property: value;
+}
+
+/* SELECTORS */
+h1 { }              /* Element selector - styles ALL h1 tags */
+.myClass { }        /* Class selector - can use multiple times */
+#myId { }           /* ID selector - use only once per page */
+
+/* COMMON TEXT PROPERTIES */
+p {
+    color: blue;                    /* Text color */
+    font-size: 16px;               /* Text size */
+    font-family: Arial;            /* Font type */
+    font-weight: bold;             /* bold, normal, 100-900 */
+    text-align: center;            /* left, center, right, justify */
+    line-height: 1.6;              /* Space between lines */
+}
+
+/* BOX MODEL (from inside out) */
+/* Content → Padding → Border → Margin */
+.box {
+    width: 200px;                  /* Content width */
+    height: 100px;                 /* Content height */
+    padding: 20px;                 /* Space inside border */
+    border: 2px solid black;       /* Border around padding */
+    margin: 10px;                  /* Space outside border */
+}
+
+/* BACKGROUND */
+div {
+    background-color: lightblue;   /* Background color */
+}
+
+/* BORDER */
+.element {
+    border: 3px solid red;         /* width style color */
+    border-radius: 10px;           /* Rounded corners */
+}
+
+/* KEY POINTS:
+   ✓ Use external CSS for real projects
+   ✓ Every HTML element is a box
+   ✓ Classes (.) can be reused, IDs (#) are unique
+   ✓ CSS cascades - later rules override earlier ones
+*/

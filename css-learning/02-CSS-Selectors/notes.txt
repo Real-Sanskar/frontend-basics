@@ -1,0 +1,36 @@
+CSS SELECTORS - QUICK NOTES
+============================
+
+1. ELEMENT SELECTOR
+   p { color: blue; }
+   → Styles ALL <p> tags
+
+2. CLASS SELECTOR (use .)
+   .highlight { background: yellow; }
+   → Use: <p class="highlight">
+   → Can use MANY times ✓
+
+3. ID SELECTOR (use #)
+   #header { font-size: 24px; }
+   → Use: <div id="header">
+   → Use only ONCE per page
+
+4. DESCENDANT SELECTOR (space)
+   div p { color: red; }
+   → Styles ALL <p> inside <div>
+
+5. PSEUDO-CLASSES
+   a:hover { color: red; }
+   → Styles when mouse hovers
+   
+   li:first-child { font-weight: bold; }
+   → Styles first item
+
+6. GROUP SELECTORS
+   h1, h2, h3 { color: navy; }
+   → Same style for multiple elements
+
+REMEMBER:
+- Classes = Most common, reusable
+- IDs = Unique, once per page
+- Hover = Interactive effects

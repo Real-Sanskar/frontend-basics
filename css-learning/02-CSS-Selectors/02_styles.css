@@ -1,0 +1,56 @@
+/* Element selector */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Class selector - can use many times */
+.intro {
+    color: green;
+    font-size: 18px;
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* ID selector - use once only */
+#main {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+}
+
+/* Descendant selector */
+#main p {
+    color: blue;
+}
+
+/* Hover pseudo-class */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* First-child pseudo-class */
+li:first-child {
+    font-weight: bold;
+    color: orange;
+}
+
+/* Group selector */
+h1, h2 {
+    font-family: Georgia;
+}

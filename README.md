@@ -4,8 +4,8 @@ This repository contains my practice code while learning **frontend development*
 I’m starting with HTML tutorials (W3Schools) and will expand into CSS and JavaScript.
 
 ## 📂 Structure
-- **html-tutorial/** → HTML basics, forms, tables, lists, etc.
-- **css-tutorial/** → CSS selectors, box model, layouts, etc. (coming soon)
+- **html-tutorial/** → HTML basics, forms, tables, lists, etc.(completed ✅)
+- **css-tutorial/** → CSS selectors, box model, layouts, etc. (ongoing)
 - **js-tutorial/** → JavaScript basics and DOM practice (later)
 
 ## 🎯 Goal

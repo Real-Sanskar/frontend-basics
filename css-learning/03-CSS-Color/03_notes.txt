@@ -1,0 +1,117 @@
+CSS COLORS - QUICK NOTES
+=========================
+
+6 WAYS TO DEFINE COLORS
+------------------------
+
+1. COLOR NAMES
+   color: red;
+   color: lightblue;
+   → 140+ names available
+   → Simple but limited
+
+2. HEX (Most Popular)
+   color: #ff0000;  /* Red */
+   color: #3498db;  /* Blue */
+   → Format: #RRGGBB
+   → Use color picker tools online
+   
+   Shorthand:
+   #ff0000 → #f00
+   #00ff00 → #0f0
+
+3. RGB
+   color: rgb(255, 0, 0);  /* Red */
+   → Format: rgb(red, green, blue)
+   → Each value: 0-255
+
+4. RGBA (with transparency)
+   color: rgba(255, 0, 0, 0.5);
+   → Same as RGB + alpha
+   → Alpha: 0 (invisible) to 1 (solid)
+
+5. HSL (Hue, Saturation, Lightness)
+   color: hsl(0, 100%, 50%);  /* Red */
+   → Hue: 0-360 (color wheel)
+     0° = Red, 120° = Green, 240° = Blue
+   → Saturation: 0-100%
+     0% = Gray, 100% = Full color
+   → Lightness: 0-100%
+     0% = Black, 50% = Normal, 100% = White
+   
+   Common Hues:
+   0° = Red
+   60° = Yellow
+   120° = Green
+   180° = Cyan
+   240° = Blue
+   300° = Magenta
+
+6. HSLA (HSL + transparency)
+   color: hsla(200, 100%, 50%, 0.5);
+   → Same as HSL + alpha
+
+
+WHERE TO USE COLORS
+-------------------
+color: red;              /* Text */
+background-color: blue;  /* Background */
+border-color: green;     /* Border */
+
+
+COMMON COLORS (HEX)
+-------------------
+#000000  Black
+#ffffff  White
+#ff0000  Red
+#00ff00  Green
+#0000ff  Blue
+#808080  Gray
+#3498db  Nice Blue
+#e74c3c  Nice Red
+#2ecc71  Nice Green
+
+
+TRANSPARENCY EXAMPLES
+---------------------
+rgba(255, 0, 0, 1)    = Solid (100%)
+rgba(255, 0, 0, 0.5)  = 50% transparent
+rgba(255, 0, 0, 0.2)  = 20% visible
+
+hsla(0, 100%, 50%, 1)   = Solid
+hsla(0, 100%, 50%, 0.5) = 50% transparent
+
+
+WHICH TO USE?
+-------------
+✓ HEX - Quick, most common (#ff0000)
+✓ RGBA - When need transparency
+✓ HSL - When adjusting colors easily
+  (change hue to get different colors)
+
+
+HSL VS RGB
+----------
+RGB: Mix red, green, blue
+HSL: Pick color (hue), then adjust brightness
+
+HSL is easier for:
+- Creating color variations
+- Adjusting brightness/darkness
+- Making color schemes
+
+
+IMPORTANT TIPS
+--------------
+✓ Use hex for solid colors
+✓ Use rgba/hsla for transparency
+✓ Ensure good contrast (dark text on light bg)
+✓ Test colors on different screens
+✓ Use color picker tools online
+
+
+TOOLS TO FIND COLORS
+--------------------
+- Google "color picker"
+- coolors.co
+- Use browser DevTools

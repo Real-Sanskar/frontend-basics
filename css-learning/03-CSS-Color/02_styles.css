@@ -1,0 +1,106 @@
+/* Basic setup */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* All boxes same base style */
+div[class^="box"] {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* 1. COLOR NAMES */
+.box1 {
+    color: darkblue;
+    background-color: lightblue;
+    border: 3px solid navy;
+}
+
+/* 2. HEX COLORS */
+.box2 {
+    color: #ffffff;  /* White text */
+    background-color: #3498db;  /* Blue background */
+    border: 3px solid #2980b9;  /* Darker blue */
+}
+
+/* 3. RGB COLORS */
+.box3 {
+    color: rgb(255, 255, 255);  /* White */
+    background-color: rgb(46, 204, 113);  /* Green */
+    border: 3px solid rgb(39, 174, 96);  /* Darker green */
+}
+
+/* 4. RGBA WITH TRANSPARENCY */
+.box4 {
+    color: #000;
+    background-color: rgba(231, 76, 60, 0.8);  /* 80% solid red */
+    border: 3px solid rgb(192, 57, 43);
+}
+
+/* 5. HSL COLORS */
+.box5 {
+    color: white;
+    background-color: hsl(200, 100%, 50%);  /* Blue */
+    border: 3px solid hsl(200, 100%, 40%);
+}
+
+/* 6. HSLA WITH TRANSPARENCY */
+.box6 {
+    color: black;
+    background-color: hsla(120, 60%, 50%, 0.7);  /* Green with 70% opacity */
+    border: 3px solid hsl(120, 60%, 40%);
+}
+
+/* TRANSPARENCY DEMO */
+.overlap-demo {
+    position: relative;
+    height: 200px;
+    margin: 30px 0;
+}
+
+.transparent-box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(52, 152, 219, 0.7);  /* 70% transparent blue */
+    top: 0;
+    left: 50px;
+}
+
+.solid-box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(231, 76, 60);  /* Solid red */
+    top: 50px;
+    left: 100px;
+}
+
+/* TEXT SHADOW */
+.shadow-text {
+    color: #e74c3c;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-size: 48px;
+}
+
+/* GRADIENT BACKGROUND */
+.gradient-box {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gradient-box h2 {
+    color: white;
+    margin: 0;
+}

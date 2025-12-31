@@ -1,0 +1,104 @@
+CSS BACKGROUNDS - QUICK NOTES
+==============================
+
+MAIN PROPERTIES
+---------------
+
+1. background-color
+   background-color: lightblue;
+   → Solid color background
+
+2. background-image
+   background-image: url('image.jpg');
+   → Add image as background
+
+3. background-repeat
+   no-repeat    → Show once
+   repeat       → Tile everywhere (default)
+   repeat-x     → Repeat horizontally
+   repeat-y     → Repeat vertically
+
+4. background-size
+   cover        → Fill entire area (most used)
+   contain      → Fit inside, keep ratio
+   200px 100px  → Custom size
+   50%          → Percentage
+
+5. background-position
+   center           → Center image
+   top right        → Position at corner
+   left             → Left side
+   50% 50%          → Custom position
+
+6. background-attachment
+   scroll       → Moves with page (default)
+   fixed        → Stays fixed (parallax effect)
+
+
+GRADIENTS
+---------
+
+Linear Gradient (straight line):
+background: linear-gradient(red, blue);
+background: linear-gradient(to right, red, blue);
+background: linear-gradient(45deg, red, blue);
+
+Radial Gradient (circular):
+background: radial-gradient(red, blue);
+background: radial-gradient(circle, red, yellow, green);
+
+
+SHORTHAND
+---------
+background: color image repeat position / size;
+
+Example:
+background: #f0f0f0 url('img.jpg') no-repeat center / cover;
+
+
+COMMON PATTERNS
+---------------
+
+1. Full Cover Image:
+   background: url('image.jpg') no-repeat center / cover;
+
+2. Simple Gradient:
+   background: linear-gradient(#667eea, #764ba2);
+
+3. Parallax Effect:
+   background: url('image.jpg') fixed center / cover;
+
+4. Pattern + Color:
+   background: url('pattern.png'), #3498db;
+
+
+IMPORTANT TIPS
+--------------
+✓ Use 'cover' for full-page backgrounds
+✓ Always set background-color as fallback
+✓ Compress images for faster loading
+✓ Use gradients for modern look
+✓ Test on different screen sizes
+
+
+GRADIENT EXAMPLES
+-----------------
+/* Blue to Purple */
+background: linear-gradient(#667eea, #764ba2);
+
+/* Red to Yellow (horizontal) */
+background: linear-gradient(to right, #ff0000, #ffff00);
+
+/* Rainbow */
+background: linear-gradient(red, orange, yellow, green, blue, purple);
+
+/* Diagonal */
+background: linear-gradient(45deg, #f093fb, #f5576c);
+
+
+MULTIPLE BACKGROUNDS
+--------------------
+Apply gradient over image:
+background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('image.jpg');

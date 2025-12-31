@@ -1,0 +1,128 @@
+/* Basic setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Common box styling */
+div[class^="box"] {
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    min-height: 150px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+p {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* 1. SOLID COLOR BACKGROUND */
+.box1 {
+    background-color: #3498db;
+}
+
+/* 2. BACKGROUND IMAGE (using pattern) */
+.box2 {
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    background-color: #2c3e50;
+    /* Pattern will overlay on the color */
+}
+
+/* 3. BACKGROUND SIZE - COVER */
+.box3 {
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?w=800');
+    background-size: cover;        /* Fills entire area */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 4. BACKGROUND POSITION */
+.box4 {
+    background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400');
+    background-repeat: no-repeat;
+    background-position: top right;  /* Position at top right */
+    background-size: 200px;
+    background-color: #e74c3c;
+}
+
+/* 5. LINEAR GRADIENT (top to bottom) */
+.box5 {
+    background: linear-gradient(#667eea, #764ba2);
+}
+
+/* 6. LINEAR GRADIENT (diagonal) */
+.box6 {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+}
+
+/* 7. RADIAL GRADIENT */
+.box7 {
+    background: radial-gradient(circle, #ffd89b, #19547b);
+}
+
+/* 8. MULTIPLE BACKGROUNDS (gradient + pattern) */
+.box8 {
+    background: 
+        linear-gradient(135deg, rgba(52, 152, 219, 0.8), rgba(142, 68, 173, 0.8)),
+        url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: #3498db;
+}
+
+/* 9. FIXED BACKGROUND (Parallax Effect) */
+.parallax {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800');
+    background-attachment: fixed;  /* Stays fixed while scrolling */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax h2 {
+    font-size: 48px;
+}
+
+/* Regular content section */
+.content {
+    background-color: white;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.content h2 {
+    color: #2c3e50;
+    text-shadow: none;
+}
+
+.content p {
+    color: #555;
+    text-shadow: none;
+    line-height: 1.8;
+    margin: 15px 0;
+}

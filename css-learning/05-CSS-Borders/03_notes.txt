@@ -1,0 +1,122 @@
+CSS BORDERS - QUICK NOTES
+==========================
+
+MAIN PROPERTIES
+---------------
+
+1. border-width
+   border-width: 5px;
+   → Thickness of border
+
+2. border-style (REQUIRED!)
+   solid    → Solid line
+   dashed   → Dashed line
+   dotted   → Dotted line
+   double   → Double line
+   none     → No border
+
+3. border-color
+   border-color: red;
+   → Color of border
+
+
+BORDER SHORTHAND (Most Used)
+-----------------------------
+border: width style color;
+
+Examples:
+border: 3px solid red;
+border: 5px dashed #3498db;
+border: 2px dotted black;
+
+
+INDIVIDUAL SIDES
+----------------
+border-top: 3px solid red;
+border-right: 2px dashed blue;
+border-bottom: 4px dotted green;
+border-left: 5px solid orange;
+
+
+BORDER-RADIUS (Rounded Corners)
+--------------------------------
+border-radius: 10px;    /* All corners */
+border-radius: 50%;     /* Perfect circle */
+
+Individual corners:
+border-top-left-radius: 20px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 30px;
+border-bottom-left-radius: 5px;
+
+
+COMMON PATTERNS
+---------------
+
+1. Simple Box:
+   border: 2px solid #ddd;
+
+2. Rounded Box:
+   border: 2px solid #ddd;
+   border-radius: 10px;
+
+3. Circle:
+   border: 2px solid red;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+
+4. Pill Button:
+   border: 2px solid blue;
+   border-radius: 50px;
+
+5. Left Accent:
+   border-left: 4px solid blue;
+
+6. Bottom Underline:
+   border-bottom: 2px solid black;
+
+
+BORDER STYLES VISUAL
+--------------------
+solid   → ___________
+dashed  → _ _ _ _ _ _
+dotted  → . . . . . .
+double  → ===========
+none    → (no border)
+
+
+IMPORTANT TIPS
+--------------
+✓ border-style is REQUIRED (default is none)
+✓ Use shorthand for cleaner code
+✓ border-radius makes modern designs
+✓ Combine with box-shadow for depth
+✓ Use single-side borders for accents
+
+
+COMMON USE CASES
+----------------
+- Cards: border + border-radius + box-shadow
+- Buttons: border + border-radius
+- Quotes: border-left accent
+- Headings: border-bottom separator
+- Avatars: border-radius: 50%
+- Input fields: border with focus state
+
+
+COMBINING WITH OTHER PROPERTIES
+--------------------------------
+/* Modern Card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Button */
+.btn {
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #3498db;
+}

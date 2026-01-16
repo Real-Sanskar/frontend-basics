@@ -1,0 +1,184 @@
+/* Basic setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 30px 0 15px 0;
+}
+
+/* Container to show boxes side by side */
+.container {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px dashed #95a5a6;
+}
+
+/* Basic box styling */
+.box {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* 1. NO MARGIN */
+.no-margin {
+    margin: 0;
+    background-color: #e74c3c;
+}
+
+/* 2. WITH MARGIN */
+.with-margin {
+    margin: 20px;  /* 20px on all sides */
+    background-color: #2ecc71;
+}
+
+/* 3. INDIVIDUAL SIDES */
+.individual {
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    background-color: #9b59b6;
+    display: block;
+}
+
+/* 4. CENTERED BOX (margin: 0 auto) */
+.centered-box {
+    width: 500px;            /* Width is required */
+    margin: 30px auto;       /* Centers horizontally */
+    background-color: #fff;
+    padding: 30px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.centered-box h2 {
+    color: #3498db;
+    margin-top: 0;
+}
+
+/* 5. SHORTHAND EXAMPLES */
+.shorthand1 {
+    margin: 20px;  /* All sides */
+    background-color: #f39c12;
+}
+
+.shorthand2 {
+    margin: 20px 40px;  /* Top/Bottom Left/Right */
+    background-color: #16a085;
+}
+
+.shorthand3 {
+    margin: 10px 20px 30px 40px;  /* Top Right Bottom Left */
+    background-color: #c0392b;
+}
+
+/* 6. MARGIN COLLAPSE DEMO */
+.collapse-box1 {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;  /* 30px bottom margin */
+}
+
+.collapse-box2 {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;  /* 20px top margin */
+}
+
+.note {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* 7. NEGATIVE MARGIN */
+.negative-demo {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.normal {
+    background-color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+.negative {
+    background-color: #e74c3c;
+    margin-top: -30px;  /* Pulls UP by 30px */
+    position: relative;
+    z-index: 1;
+}
+
+/* 8. PRACTICAL EXAMPLES - CARDS */
+.card-container {
+    display: flex;
+    gap: 20px;  /* Modern way, but margin also works */
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;  /* Space around each card */
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    margin: 0;
+}
+
+/* 9. SECTION SPACING */
+.section {
+    background-color: white;
+    padding: 30px;
+    margin: 40px 0;  /* Space between sections */
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.section p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}

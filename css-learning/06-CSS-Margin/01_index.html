@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Margin</title>
+    <link rel="stylesheet" href="02_styles.css">
+</head>
+<body>
+    <h1>CSS Margin Demo</h1>
+    
+    <!-- No Margin -->
+    <div class="container">
+        <div class="box no-margin">No Margin</div>
+        <div class="box no-margin">No Margin</div>
+    </div>
+    
+    <!-- With Margin -->
+    <div class="container">
+        <div class="box with-margin">20px Margin</div>
+        <div class="box with-margin">20px Margin</div>
+    </div>
+    
+    <!-- Individual Sides -->
+    <div class="container">
+        <div class="box individual">
+            <p>Different margins on each side</p>
+            <p>Top: 10px, Right: 30px, Bottom: 50px, Left: 70px</p>
+        </div>
+    </div>
+    
+    <!-- Centered Box -->
+    <div class="centered-box">
+        <h2>Centered with margin: 0 auto</h2>
+        <p>This box is centered horizontally</p>
+    </div>
+    
+    <!-- Margin Shorthand Examples -->
+    <div class="container">
+        <div class="box shorthand1">margin: 20px;</div>
+        <div class="box shorthand2">margin: 20px 40px;</div>
+        <div class="box shorthand3">margin: 10px 20px 30px 40px;</div>
+    </div>
+    
+    <!-- Margin Collapse Demo -->
+    <h2>Margin Collapse Example</h2>
+    <div class="collapse-box1">
+        Box 1 (margin-bottom: 30px)
+    </div>
+    <div class="collapse-box2">
+        Box 2 (margin-top: 20px)
+    </div>
+    <p class="note">↑ Gap is 30px, not 50px (larger margin wins)</p>
+    
+    <!-- Negative Margin -->
+    <div class="negative-demo">
+        <div class="box normal">Normal Box</div>
+        <div class="box negative">Negative Margin (pulled up)</div>
+    </div>
+    
+    <!-- Practical Examples -->
+    <h2>Practical Uses</h2>
+    
+    <!-- Card Layout -->
+    <div class="card-container">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>Cards with margin spacing</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>Clean and organized</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>Professional layout</p>
+        </div>
+    </div>
+    
+    <!-- Section Spacing -->
+    <div class="section">
+        <h2>Section with Margin</h2>
+        <p>Margins create breathing room between sections</p>
+    </div>
+    
+    <div class="section">
+        <h2>Another Section</h2>
+        <p>Making content easy to read and scan</p>
+    </div>
+</body>
+</html>

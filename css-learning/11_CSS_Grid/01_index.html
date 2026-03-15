@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard Grid Layout</title>
+        <link rel="stylesheet" href="02_styles.css">
+    </head>
+    
+    <body>
+        <div class="dashboard">
+            <header class="header">
+                <h2>Dashboard</h2>
+                <div class="user">John Doe</div>
+            </header>
+
+            <aside class="sidebar">
+                <nav>
+                    <a href="#" class="nav-item active">Dashboard</a>
+                    <a href="#" class="nav-item">Analytics</a>
+                    <a href="#" class="nav-item">Reports</a>
+                    <a href="#" class="nav-item">Settings</a>
+                </nav>
+            </aside>
+
+            <main class="main-content">
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1,234</div>
+                        <div class="stat-label">Total Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">567</div>
+                        <div class="stat-label">Active Now</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">89%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$12.5k</div>
+                        <div class="stat-label">Revenue</div>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="card chart-card">
+                        <h3>Revenue Chart</h3>
+                        <div class="chart-placeholder">Chart goes here</div>
+                    </div>
+
+                    <div class="card activity-card">
+                        <h3>Recent Activity</h3>
+                        <div class="activity-item">User John Registered</div>
+                        <div class="activity-item">New order placed</div>
+                        <div class="activity-item">Payment received</div>
+                        <div class="activity-item">Report generated</div>
+                    </div>
+
+                    <div class="card tasks-card">
+                        <h3>Tasks</h3>
+                        <div class="task-item">Review analytics report</div>
+                        <div class="task-item">Update user database</div>
+                        <div class="task-item">Send monthly newletter</div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <p>2026 Dashboard. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <section class="gallery-section">
+            <h2>Photo Gallery</h2>
+            <div class="photo-gallery">
+                <div class="photo photo-large">Large Photo</div>
+                <div class="photo">Photo 1</div>
+                <div class="photo">Photo 2</div>
+                <div class="photo photo-tall">Tall Photo</div>
+                <div class="photo">Photo 3</div>
+                <div class="photo">Photo 4</div>
+                <div class="photo photo-wide">Wide Photo</div>
+                <div class="photo">Photo 5</div>
+            </div>
+        </section>
+    </body>
+</html>

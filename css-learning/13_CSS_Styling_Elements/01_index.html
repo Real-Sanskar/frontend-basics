@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charsest="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <title>Styled Element showcase</title>
+        <link rel="stylesheet" href="02_styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Styled Elements Showcase</h1>
+
+            <section class="section">
+                <h2>Lists</h2>
+
+                <div class="lists-grid">
+                    <div>
+                        <h3>Feature List</h3>
+                        <ul class="feature-list">
+                            <li>Responsive Design</li>
+                            <li>Fast Performance</li>
+                            <li>Easy to customize</li>
+                            <li>Modern Interface</li>
+                        </ul>
+                    </div> 
+
+                    <div>
+                        <h3>Step List</h3>
+                        <ol class="step-list">
+                            <li>Sign up for account</li>
+                            <li>Complete your profile</li>
+                            <li>Start using the app</li>
+                            <li>Invite your team</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Data Table</h2>
+                
+                <div class="table-container">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Department</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rahul Sinha</td>
+                                <td>Developer</td>
+                                <td>Engineering</td>
+                                <td>₹1,00,000</td>
+                            </tr>
+                            <tr>
+                                <td>Ankit Yadav</td>
+                                <td>Designer</td>
+                                <td>Creative</td>
+                                <td>₹90,000</td>
+                            </tr>
+                            <tr>
+                                <td>Mohan Sharma</td>
+                                <td>Manager</td>
+                                <td>Operations</td>
+                                <td>₹1,50,000</td>
+                            </tr>
+                            <tr>
+                                <td>Animesh Sahu</td>
+                                <td>Analyst</td>
+                                <td>Finance</td>
+                                <td>₹80,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Images</h2>
+
+                <div class="images-grid">
+                    <div class="image-card">
+                        <div class="image-placeholder">Image 1</div>
+                        <h4>Standard Images</h4>
+                    </div>
+
+                    <div class="image-card">
+                        <div class="image-placeholder rounded">Image 2</div>
+                        <h4>Rounded Corners</h4>
+                    </div>
+
+                    <div class="image-card">
+                        <div class="image-placeholder circle">Image 3</div>
+                        <h4>Circle Image</h4>
+                    </div>
+
+                    <div class="image-card">
+                        <div class="image-placeholder grayscale">Image 4</div>
+                        <h4>Grayscale Effect</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Form Elements</h2>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="your@email.com">
+                            <p class="form-helper">We will never share your email</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <select for="subject" class="form-input">
+                            <option>General Inquiry</option>
+                            <option>Technical Support</option>
+                            <option>Billing Question</option>
+                            <option>Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea for="message" class="form-input" placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>I agree to the terms and conditions</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+
+            <section class="section">
+                <h2>Buttons</h2>
+
+                <div class="buttons-showcase">
+                    <h3>Button Variants</h3>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-success">Success</button>
+                        <button class="btn btn-danger">Danger</button>
+                        <button class="btn btn-outline">Outline</button>
+                    </div>
+
+                    <h3>Button Sizes</h3>
+                    <div class="button-group">
+                        <button class="btn btn-primary btn-small">Small</button>
+                        <button class="btn btn-primary btn-medium">Medium</button>
+                        <button class="btn btn-primary btn-large">Large</button>
+                    </div>
+
+                    <h3>Button Shapes</h3>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Default</button>
+                        <button class="btn btn-primary btn-rounded">Rounded</button>
+                        <button class="btn btn-primary btn-circle">♥</button>
+                    </div>
+
+                    <h3>Button States</h3>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Normal</button>
+                        <button class="btn btn-primary" disabled>Disabled</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+
+    
+    

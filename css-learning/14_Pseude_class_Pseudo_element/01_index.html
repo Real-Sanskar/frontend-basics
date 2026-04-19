@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, scale=1.0;">
+        <title>Pseude-classes & Pseude-elements</title>
+        <link rel="stylesheet" href="02_styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Pseude-Classes & Pseude-Elements Showcase</h1>
+
+            <section class="section">
+                <h2>Interactive Pseude-classes</h2>
+
+                <div class="demo-grid">
+                    <div class="demo-box hover-demo">
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="demo-box active-demo">
+                        <p>Click Me</p>
+                    </div>
+                    <div class="demo-box focus-demo" tabindex="0">
+                        <p>Tab to me</p>
+                    </div>
+                </div>
+
+                <div class="link-demo">
+                    <h3>Link States (LoVe HAte)</h3>
+                    <a href="#test" class="styled-link">Unvisited Link</a>
+                    <a href="#" class="styled-link">Visited Link (Click to visit)</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Structural Pseudo-classes</h2>
+
+                <ul class="item-list">
+                    <li>First item (special styling)</li>
+                    <li>Second item</li>
+                    <li>Third item (nth-child example)</li>
+                    <li>Fourth item</li>
+                    <li>Fifth item</li>
+                    <li>Last item (special styling)</li>
+                </ul>
+
+                <div class="zebra-table">
+                    <h3>Zebra striping with: nth-child</h3>
+                    <div class="table-row">Row 1</div>
+                    <div class="table-row">Row 2 (even - grey)</div>
+                    <div class="table-row">Row 3</div>
+                    <div class="table-row">Row 4 (even - grey)</div>
+                    <div class="table-row">Row 5</div>
+                    <div class="table-row">Row 6 (even - grey)</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Other useful Pseudo-Classes</h2>
+
+                <div class="form-demo">
+                    <h3>Form states</h3>
+                    <div class="form-group">
+                        <label>Enabled Input:</label>
+                        <input type="text" placeholder="Type here">
+                    </div>
+                    <div class="form-group">
+                        <label>Disabled Input:</label>
+                        <input type="text" value="Cannot edit" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            Custom Checkbox
+                        </label>
+                    </div>
+                </div>
+
+                <div class="not-demo">
+                    <button class="btn">Normal Button</button>
+                    <button class="btn" disabled>Diabled Button</button>
+                    <button class="btn">Another Button</button>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Pseudo-Elements: ::before & ::after</h2>
+
+                <div class="before-after-grid">
+                    <div class="card icon-card">
+                        <h3>Success Message</h3>
+                        <p>Your action was completed</p>
+                    </div>
+
+                    <div class="card quote-card">
+                        <p>This is an inspiring quote with decorative quotation marks</p>
+                    </div>
+
+                    <div class="card badge-card">
+                        <h3>Product Name</h3>   
+                        <p>This is a featured proudct</p>
+                    </div>
+                </div>
+
+                <nav class="breadcrumb">
+                    <a href="#">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">Category</a>
+                    <span>Current Page</span>
+                </nav>
+
+                <div class="tooltip-demo">
+                    <span class="tooltip" data-tooltip="This is helpful information">
+                        Hover for tooltip
+                    </span>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Pseudo-Elements: ::first-letter & ::first-line</h2>
+
+                <p class="drop-cap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+                <p class="first-line-styled">
+                    This paragraph has special styling for its first line. 
+                    The first line is bold and blue. When you resize the window, 
+                    the first line changes dynamically and the styling adapts automatically. 
+                    This is the power of the ::first-line pseudo-element!
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Advanced Combinations</h2>
+
+                <div class="advanced-links">
+                    <a href="https://example.com" class="external-link">External Link</a>
+                    <a href="document.pdf" class="pdf-link">PDF Document</a>
+                    <a href="#" class="animated-link">Animated Underline</a>
+                </div>
+
+                <div class="fancy-quote">
+                    <p>Design is not just what is looks and feels like. Design is how it works.</p>
+                    <cite>- Steve Jobs</cite>
+                </div>
+
+                <div class="counter-list">
+                    <h3>Custom Numbered List</h3>
+                    <div class="counter-item">First achievement unlokced</div>
+                    <div class="counter-item">Second milestone reached</div>
+                    <div class="counter-item">Third goal accomplished</div>
+                    <div class="counter-item">Fourth level completed</div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

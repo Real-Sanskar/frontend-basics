@@ -5,8 +5,8 @@ I’m starting with HTML tutorials (W3Schools) and will expand into CSS and Java
 
 ## 📂 Structure
 - **html-tutorial/** → HTML basics, forms, tables, lists, etc.(completed ✅)
-- **css-tutorial/** → CSS selectors, box model, layouts, etc. (ongoing)
-- **js-tutorial/** → JavaScript basics and DOM practice (later)
+- **css-tutorial/** → CSS selectors, box model, layouts, etc. (completed ✅)
+- **js-tutorial/** → JavaScript basics and DOM practice (ongoing)
 
 ## 🎯 Goal
 To build a strong foundation in frontend before moving to **React** and advanced projects.
